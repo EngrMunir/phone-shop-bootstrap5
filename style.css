@@ -1,0 +1,62 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif;
+}
+.section-title h3{
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.hr-style{
+    border:5px dotted white;
+    border-bottom: none;
+    width: 50px;
+}
+/* header start */
+header{
+    background-image: url('/images/banner.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    padding: 1% 10%;
+    background-color: rgba(0,0,0,0.3);
+}
+.nav-icon{
+    color:white
+}
+.navbar-brand img{
+    width: 60px;
+    height: auto;
+}
+.nav-link{
+    color:white;
+    margin: 10px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.nav-link:hover{
+    background: #2980b9;
+    color: white;
+    transform: scale(1.1);
+}
+.banner-container{
+    height: 90vh;
+}
+
+.banner-container h1{
+    font-size: 3.5rem;
+    background-color: rgba(7,101,189,0.8);
+    padding: 10px;
+    font-family: "Handlee", cursive;
+    border-radius: 5px;
+}
+/* header end */

@@ -12,9 +12,26 @@
 
     </header>
     <main>
+        <section class="bg-slate-100">
+            <div class="input-group my-3 w-25">
+                <input id="search-field" type="text" class="form-control" placeholder="search mobile" aria-label="phoneName" aria-describedby="button-addon2">
+                <button onclick="handleSearch()" class="btn btn-outline-secondary mr-5" type="button" id="button-addon2">Search</button>
+              </div>
+        </section>
+        <!-- spinner or loader -->
+
+        <!-- search result -->
         <section>
+            <div  id="loading-spinner" class="text-center my-5 d-none">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
             <div id="phone-container" class="row d-flex gy-3 my-3">
                 
+            </div>
+            <div id="show-all-container" class="d-none">
+                <button type="button" class="btn btn-secondary">Show all</button>
             </div>
         </section>
     </main>
