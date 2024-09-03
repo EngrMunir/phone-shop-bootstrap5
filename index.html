@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <!-- link style sheet -->
+     <link rel="stylesheet" href="style.css">
+     <!-- bootstrap5 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
    <div class="container">
     <header>
-
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span> <i class="fas fa-bars nav-icon"></i> </span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,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" alt="logo">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="#about-me">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="#">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section id="banner">
+            <div class="banner-container d-flex justify-content-center align-items-center">
+                <div class="banner-contents text-center">
+                    <h1 class="font-weight-bolder text-white mb-5">Find Your Next Smartphone Here!</h1>
+                    <button class="btn btn-lg btn-primary mr-3" onclick="location.href='#review'"> <i class="fas fa-play mr-2"></i> Review</button>
+                    <button class="btn btn-lg btn-primary mr-3 " onclick="window.open('https://www.youtube.com/results?search_query=phone+review')" class="request-callback"> <i class="fab fa-youtube mr-2"></i> Subscribe</button>
+                </div>
+            </div>
+          </section>
     </header>
     <main>
         <section class="bg-slate-100">
@@ -18,10 +61,10 @@
                 <button onclick="handleSearch()" class="btn btn-outline-secondary mr-5" type="button" id="button-addon2">Search</button>
               </div>
         </section>
-        <!-- spinner or loader -->
-
+       
         <!-- search result -->
         <section>
+             <!-- spinner or loader -->
             <div  id="loading-spinner" class="text-center my-5 d-none">
                 <div class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -30,10 +73,28 @@
             <div id="phone-container" class="row d-flex gy-3 my-3">
                 
             </div>
-            <div id="show-all-container" class="d-none">
-                <button type="button" class="btn btn-secondary">Show all</button>
+            <div id="show-all-container" class="d-none text-center my-3">
+                <button onclick="handleShowAll()" type="button" class="btn btn-secondary">Show all</button>
             </div>
         </section>
+        <!-- show details modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 

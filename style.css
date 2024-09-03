@@ -12,11 +12,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bolder;
     margin-bottom: 0;
 }
-.hr-style{
-    border:5px dotted white;
-    border-bottom: none;
-    width: 50px;
-}
+
 /* header start */
 header{
     background-image: url('/images/banner.jpg');
