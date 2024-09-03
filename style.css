@@ -56,3 +56,25 @@ header{
     border-radius: 5px;
 }
 /* header end */
+/* footer starts */
+footer{
+    padding: 1% 10%;
+    background: #056676;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    color: black;
+}
+/* footer end */
+@media (max-width: 768px) {
+    .nav-link{
+        background: rgb(0,0,0,0.7);
+    }
+    .banner-container h1{
+        font-size: 2.5rem;
+    }
+}
